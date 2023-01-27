@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Place Details</title>
+
+    <meta name="description" content="Our first page">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></link>
+    
+    <link  rel="stylesheet" href="../css/profile.css"/>
+    <link  rel="stylesheet" href="../css/place.css"/>
+    <link  rel="stylesheet" href="../css/nav.css"/>
+
+    <link href='../packages/core/main.css' rel='stylesheet' />
+    <link href='../packages/daygrid/main.css' rel='stylesheet' />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src='../packages/core/main.js'></script>
+    <script src='../packages/interaction/main.js'></script>
+    <script src='../packages/daygrid/main.js'></script>
+
+    <script src="../js/place.js"></script>
+    <script src="../js/nav.js"></script>
+
+  </head>
+  
+  <body>
+    <div  class="container-fluid">
+      <nav class="navbar justify-content-between" id="nav-bar">
+        <form class="form-inline" id="search-box">
+          <input class="form-control mr-sm-2" type="search" id="search-value" aria-label="Search">
+          <button class="btn my-2 my-sm-0" id="search-button" type="submit">Search</button>
+        </form>
+
+        <div id="nav-text-container">
+            <div class= 'dropdown .d-none'>
+                <a href='#' class='link-secondary nav-value' id='user-nav-button'></a>
+               <div class='dropdown-content'>
+                  <a class='nav-profile' href='#'>Profile</a>
+                  <a class='nav-dashboard' href='#'>Dashboard</a>
+                  <a class='nav-account-settings' href='#'>Account Settings</a>
+                  <a class='nav-logout' href='#'>Logout</a></div></div>
+                </div>
+            </div>
+        </div>
+      </nav>
+    
+
+      <div class="row" id="place-profile">
+      
+      </div>
+
+      <div class="row" id="user-nav">
+        <div class="col" id="reviews-div"><a href="#" class="m-3" id="user-reviews">Reviews</a></div>
+      </div>
+
+      <div class="row">
+        <div class="col" id="user-profile-content">
+          <div id="pop-up">
+            <button type="button" class="btn mt-3 ml-5 mb-3" id="popup-cancel-btn">X</button>
+            <h1 class="display-4 ml-5 mb-3 mt-3" id="coll-place"></h1>
+            <h1 class="ml-5 mt-3">Add to Collection</h1>
+            <p id="error-message"></p>
+          
+            <select class="form-control m-5" id="collection-dropdown">
+              
+            </select>
+          
+            <button type="button" class="btn ml-5 mb-3" id="popup-add-btn">Add</button>
+          </div>
+          <div id="main-content" class="reviews-content">
+            <div class="row" id="tableDiv">
+              <table class="table dataTable text-center" id="reviewTable">
+                  <thead>
+                      <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">User Name</th>
+                          <th scope="col">Reviews</th>
+                          <th scope="col">Rating</th>
+                          <th scope="col"></th>
+                      <tr>
+                  </thead>
+                  <tbody id="place-reviews-tbody">
+                  </tbody>
+              </table>
+              <div class="col-md-12 text-center">
+                <ul class="pagination pagination-lg pager" id="myPager">
+                    <li><a href="#" id="prev-link" class="pr-3"> < </a></li>
+                    <li class = "mt-2" id="page-num"></li>
+                    <li><a href="#" id="next-link" class="pl-3"> > </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="new-review-form">
+              <div class="row">
+                <div class="col">
+                  <h3>Add Review</h3>
+                  <textarea class="form-control" id="new-review-textarea" rows="5"></textarea>
+                  <p id="error-message"></p>
+                  <button type='button' class='mt-5 btn' id="add-new-review">Add Review</button>
+                </div>
+
+                <div class="col">
+                  <h3>Rating # of 10</h3>
+                  <select class="form-select" id="rating-option" aria-label="Default select example">
+                    <option value="1.0" selected>1.0</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.0">2.0</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.0">3.0</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4.0">4.0</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5.0">5.0</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6.0">6.0</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7.0">7.0</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8.0">8.0</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9.0">9.0</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10.0">10.0</option>
+                  </select></div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </body>
+</html>

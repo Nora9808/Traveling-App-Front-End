@@ -1,0 +1,134 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Californian FB";
+    color: #707070;
+}
+
+div#main-content {
+    margin: 100px;
+}
+
+form#upload-data-form {
+    margin-left: 140px !important;
+}
+
+
+select#places-dropdown {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #707070 !important;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#continents-dp-form{
+    margin-left: 430px !important;
+}
+
+#countries-dp-form{
+    margin-left: 300px !important;
+}
+
+#upload-data{
+    background: #EBBBA4;
+}
+
+
+th {
+    background: #EBBBA4;
+}
+
+tr:nth-child(even) {
+    background: #BDD3E0;
+}
+
+tr:nth-child(odd) {
+    background: white !important;
+}
+
+table.dataTable {
+    border-collapse: inherit !important;
+    text-align: left;
+    width: 84% !important;
+    margin: auto;
+}
+
+.table td, .table th {
+    border-top: none !important;
+}
+
+.dataTable th, .dataTable td {
+    padding: 10px !important;
+}
+
+.dataTable {
+    table-layout: auto !important;
+}
+
+
+
+.management-delete-button, .management-edit-button{
+    margin-left: 50px;
+    background: #EBBBA4;
+}
+
+.data-col {
+    width: 700px;
+    text-align: center;
+}
+
+
+#data-edit-button, #data-new-button{
+    background-color: #EBBBA4;
+    margin-top: 70px;
+    margin-left: 310px;
+}
+
+.edit-place-name{
+    margin-left: 1700px;
+}
+
+input#place-input {
+    width: 500px;
+}
+
+
+.add-new-place {
+    color: black;
+    border-color: #EBBBA4;
+    background-color: #EBBBA4;
+    margin-left: 470px;
+}
+
+select#continents-dp, select#countries-dp {
+    width: 250px;
+    border-radius: 7px;
+    border-color: lightgray !important;
+    height: 40px;
+    text-align: center;
+    margin-left: -190px;
+}
+
+ul#myPager {
+    margin-left: 1150px;
+}
+
+@media only screen  and (min-width : 1824px) {
+    ul#myPager {
+        margin-left: 1500px;
+    }
+
+    .add-new-place {
+        margin-left: 830px;
+    }
+
+    #continents-dp-form{
+        margin-left: 500px !important;
+    }
+    
+}

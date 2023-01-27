@@ -1,0 +1,67 @@
+{
+    "post_authenticate_login" : "https://localhost:44377/api/Users/authenticate",
+    "post_authenticate_signup" : "https://localhost:44377/api/Users",
+    "get_user_by_userid" : "https://localhost:44377/api/Users/",
+    "get_users" : "https://localhost:44377/api/Users",
+    "put_user_by_userid" : "https://localhost:44377/api/Users/",
+
+    "get_all_continents": "https://localhost:44370/api/Continents",
+    "get_paginated_continents" : "https://localhost:44370/api/Continents/paginatedContinent?pageNum=",
+    "get_search_continent" : "https://localhost:44370/api/Continents/continentName/",
+    "get_continent_by_id" : "https://localhost:44370/api/Continents/",
+    "put_continent_by_id" : "https://localhost:44370/api/Continents/",
+    "post_new_continent" : "https://localhost:44370/api/Continents",
+    "delete_contienent_by_id": "https://localhost:44370/api/Continents/",
+
+    "get_all_countries" : "https://localhost:44326/api/Countries",
+    "get_paginated_countries" : "https://localhost:44326/api/Countries/paginatedCountry?pageNum=",
+    "get_search_country" : "https://localhost:44326/api/Countries/countryName/",
+    "get_country_by_id" : "https://localhost:44326/api/Countries/",
+    "put_country_by_id" : "https://localhost:44326/api/Countries/",
+    "post_new_country" : "https://localhost:44326/api/Countries",
+    "delete_country_by_id" : "https://localhost:44326/api/Countries/",
+
+    "get_paginated_cities" : "https://localhost:44334/api/Cities/paginatedCiy?pageNum=",
+    "get_search_city" : "https://localhost:44334/api/Cities/cityName/",
+    "get_city_by_id" : "https://localhost:44334/api/Cities/",
+    "put_city_by_id" : "https://localhost:44334/api/Cities/",
+    "post_new_city" : "https://localhost:44334/api/Cities",
+    "delete_city_by_id" : "https://localhost:44334/api/Cities/",
+
+    "get_reviews" : "https://localhost:44371/api/Reviews",
+    "get_reviews_by_userid": "https://localhost:44371/api/Reviews/userId/",
+    "get_reviews_by_placeid" : "https://localhost:44371/api/Reviews/placeId/",
+    "get_review_by_reviewid" : "https://localhost:44371/api/Reviews/",
+    "delete_review_by_reviewid" : "https://localhost:44371/api/Reviews/",
+    "put_review_by_reviewid" : "https://localhost:44371/api/Reviews/",
+    "post_new_review" : "https://localhost:44371/api/Reviews",
+
+    "get_favorites_by_userid" : "https://localhost:44367/api/Favorites/userId/",
+    "delete_favorites_by_favoritesid" : "https://localhost:44367/api/Favorites/",
+    "post_to_favorites" : "https://localhost:44367/api/Favorites",
+
+    "get_all_user_collections" : "https://localhost:44344/api/Collections/",
+    "get_collections_by_userid": "https://localhost:44344/api/Collections/userId/",
+    "post_to_collection" : "https://localhost:44344/api/Collections",
+    "get_collection_by_userid_collectionname" : "https://localhost:44344/api/Collections/getCollectionItem?id=",
+    "delete_collection_by_userid_collectionname" : "https://localhost:44344/api/Collections/deleteCollection?userId=",
+    "delete_collection_item_by_collectionid" : "https://localhost:44344/api/Collections/deleteCollectionItem/id/",
+
+    "get_events" : "https://localhost:44378/api/Events",
+    "get_paginated_events" : "https://localhost:44378/api/Events/PageNum/",
+    "post_new_event" : "https://localhost:44378/api/Events",
+    "post_new_user_event" : "https://localhost:44378/api/UserEvents",
+    "put_event_by_eventid" : "https://localhost:44378/api/Events/",
+    "delete_event_by_eventid" : "https://localhost:44378/api/Events/",
+    "delete_user_event_by_eventid" : "https://localhost:44378/api/UserEvents/",
+    "get_event_details_by_startdate" : "https://localhost:44378/api/Events/startDate/",
+    "get_user_events" : "https://localhost:44378/api/UserEvents",
+
+
+    "get_followings_by_userid" : "https://localhost:44302/api/Followings/userId/",
+    "get_all_followings_by_userid" : "https://localhost:44302/api/AllFollowings/userId/",
+    "delete_unfollow_by_userid_followingid" : "https://localhost:44302/api/Followings/Unfollow?userId=",
+    "post_follow_user": "https://localhost:44302/api/Followings/Follow"
+
+    
+}

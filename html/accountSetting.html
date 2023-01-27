@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Account Settings</title>
+
+    <meta name="description" content="Our first page">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link  rel="stylesheet" href="../css/accountSettings.css"/>
+    <link  rel="stylesheet" href="../css/nav.css"/>
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></link>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="../js/accountSetting.js"></script>
+    <script src="../js/nav.js"></script>
+
+  </head>
+  
+  <body>
+    <div  class="container-fluid">
+
+      <nav class="navbar justify-content-between" id="nav-bar">
+
+        <form class="form-inline" id="search-bar">
+          <input class="form-control mr-sm-2" id="search-value" type="search" aria-label="Search">
+          <button class="btn my-2 my-sm-0" id="search-button" type="submit">Search</button>
+        </form>
+
+        <div id="nav-text-container">
+          <div class= 'dropdown .d-none'>
+            <a href='#' class='link-secondary nav-value' id='user-nav-button'></a>
+           <div class='dropdown-content'>
+              <a class='nav-profile' href='#'>Profile</a>
+              <a class='nav-dashboard' href='#'>Dashboard</a>
+              <a class='nav-account-settings' href='#'>Account Settings</a>
+              <a class='nav-logout' href='#'>Logout</a></div></div>
+            </div>
+        </div>
+        </div>
+      </nav>
+
+      <div id="main-content">
+        <h1 class="display-4">Account Settinigs</h1>
+
+        <div class="row mt-5">
+          <div class="col col-lg-2"><h3>First Name:</h3></div>
+          <div class="col"><input class="form-control form-control-lg" id="fname" type="text"></div>
+          <div class="w-100 mt-5"></div>
+          <div class="col col-lg-2"><h3>Last Name:</h3></div>
+          <div class="col"><input class="form-control form-control-lg" id="lname" type="text"></div>
+          <div class="w-100 mt-5"></div>
+          <div class="col col-lg-2"><h3>Email:</h3></div>
+          <div class="col"><input class="form-control form-control-lg" id="emailInput" type="email"></div>
+          <div class="w-100 mt-5"></div>
+          <div class="col col-lg-2"><h3>User Type:</h3></div>
+          <div class="col"><input class="form-control form-control-lg" id="userType" type="text" readonly></div>
+        </div>
+        <h5 id="acc-sett-msg"></h5>
+        <button type="button" class="btn" id="edit-button">Edit</button>
+      </div>
+    </div>
+  </body>
+</html>

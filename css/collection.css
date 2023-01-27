@@ -1,0 +1,60 @@
+h1#collection-name {
+    margin-left: 100px;
+}
+
+.collection-addfavorite-button, .collection-delete-button, .btn.collection-delete-btn , .collection-item-delete-button{
+    margin-left: 20px;
+    background-color: #EBBBA4;
+}
+
+.btn.collection-delete-btn, .collection-item-delete-button{
+    margin-left: 50px !important;
+}
+
+a.collectionName {
+    font-size: 20px !important;
+}
+
+td.collection-delete-col {
+    width: 200px;
+}
+
+div#create-collection-div {
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+input#create-collection-input {
+    width: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#create-collection-button{
+    background-color: #EBBBA4;
+}
+h3#favorites-message {
+    margin-left: 100px;
+}
+
+p#error-message {
+    margin-left: 100px !important;
+}
+
+ul#myPager {
+    margin-left: 1150px;
+}
+
+@media only screen  and (min-width : 1824px) {
+    div#create-collection-div {
+        margin-left: -375px;
+    }
+
+    ul#myPager {
+        margin-left: 1500px;
+    }
+
+    p#error-message {
+        margin-left: 130px !important;
+    }
+
+}

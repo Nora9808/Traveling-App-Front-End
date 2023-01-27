@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User Main</title>
+
+    <meta name="description" content="Our first page">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></link>
+    <link  rel="stylesheet" href="../css/index.css"/>
+    <link  rel="stylesheet" href="../css/nav.css"/>
+
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/nav.js"></script>
+  </head>
+  
+  <body>
+
+    <div  class="container-fluid">
+      <nav class="navbar justify-content-between" id="nav-bar">
+        <form class="form-inline" id="search-box">
+          <input class="form-control mr-sm-2" type="search" id="search-value" aria-label="Search">
+          <button class="btn my-2 my-sm-0" id="search-button" type="submit">Search</button>
+        </form>
+
+        <div id="nav-text-container">
+            <div class= 'dropdown .d-none'>
+                <a href='#' class='link-secondary nav-value' id='user-nav-button'></a>
+               <div class='dropdown-content'>
+                  <a class='nav-profile' href='#'>Profile</a>
+                  <a class='nav-dashboard' href='#'>Dashboard</a>
+                  <a class='nav-account-settings' href='#'>Account Settings</a>
+                  <a class='nav-logout' href='#'>Logout</a></div></div>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div id="text-contianer">
+          <h1 id="maintext1">Ready to Go</h1>
+          <hr>
+          <p id="maintext2">Discover your Destination and Plan your Next Trip</p>
+        </div>
+        <img src="../img/main1.png" id="main-img-1" class="img-fluid" alt="Responsive image">
+      </div>
+
+
+      <div class="row" id="images-gallerey">
+
+        <div class="col">
+          <a href="#" id="continent-click"><div class="col-container" id="continent-container">
+          </div></a>
+        </div>
+
+        <div class="col">
+          <a href="#" id="country-click"><div class="col-container" id="country-container">
+          </div></a>
+        </div>
+
+        <div class="col">
+          <a href="#" id="city-click"><div class="col-container" id="city-container">
+          </div></a>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col" id="app-desc">
+          <h1 id="aboutus1">About Us</h1>
+          <p id="aboutus2">Our application will allow you to explore different places,
+             read other people’s experiences, and plan for your own experience.
+            Enjoy following other people, and learn from their adventures.</p>
+        </div>
+
+        <div class="col">
+          <img src="../img/main2.png" id="main-img-5" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

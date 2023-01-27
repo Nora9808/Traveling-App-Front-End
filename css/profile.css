@@ -1,0 +1,85 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Californian FB";
+    color: #707070;
+}
+
+#main-content{
+    margin:50px;
+}
+
+form#search-bar {
+    margin-left: 500px !important;
+}
+
+.navbar{
+    background-color: #EBBBA4;
+}
+
+input.form-control.mr-sm-2 {
+    width: 50rem;
+}
+
+
+#user-profile{
+    margin:30px;
+}
+
+img#main-img-8 {
+    width: 200px;
+}
+
+#user-nav{
+    background-color: #EBBBA4;
+}
+
+#reviews-div{
+    margin-left: 200px;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #707070 !important;
+}
+
+
+/* TABLE */
+#main-content{
+    margin:100px;
+}
+
+th {
+    background: #EBBBA4;
+}
+
+tr:nth-child(even) {
+    background: #BDD3E0;
+}
+
+tr:nth-child(odd) {
+    background: white !important;
+}
+
+table.dataTable {
+    border-collapse: inherit !important;
+    text-align: left;
+    width: 84% !important;
+    margin: auto;
+}
+
+.table td, .table th {
+    border-top: none !important;
+}
+
+.dataTable th, .dataTable td {
+    padding: 10px !important;
+}
+
+.dataTable {
+    table-layout: auto !important;
+}

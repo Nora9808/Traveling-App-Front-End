@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Admin Main</title>
+
+    <meta name="description" content="Our first page">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></link>
+    <link  rel="stylesheet" href="../css/index.css"/>
+    <link  rel="stylesheet" href="../css/nav.css"/>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/adminMain.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/nav.js"></script>
+
+  </head>
+  
+  <body>
+
+    <div  class="container-fluid">
+      <nav class="navbar justify-content-between" id="nav-bar">
+        <form class="form-inline" id="search-box">
+          <input class="form-control mr-sm-2" type="search" id="search-value" aria-label="Search">
+          <button class="btn my-2 my-sm-0" id="search-button" type="submit">Search</button>
+        </form>
+
+        <div id="nav-text-container">
+            <div class= 'dropdown .d-none'>
+                <a href='#' class='link-secondary nav-value' id='user-nav-button'></a>
+               <div class='dropdown-content'>
+                  <a class='nav-dashboard' href='#'>Dashboard</a>
+                  <a class='nav-account-settings' href='#'>Account Settings</a>
+                  <a class='nav-logout' href='#'>Logout</a></div></div>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+
+      <div id="main-content">
+        <div class="row" id="tableDiv">
+          <table class="table" id="dataTable">
+              <thead>
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Top 3, Most Reviewd Places</th>
+                      <th scope="col"># of Reviews</th>
+                  <tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+          </table>
+        </div>
+
+        
+        <div class="mt-5 pl-3" id="chart-row-top">
+          <div><h1 class="text-center" id="user-number"></h1><br>
+            <h3 class="text-center" id="user-number-text">Total Number <br> of Users</h3></div>
+          <div id="left-chart"></div>
+        </div>
+
+        <div class="mt-5 pl-3" id="chart-row-bottom">
+          <div><h1 class="text-center" id="reviews-number"></h1><br>
+            <h3 class="text-center" id="reviews-number-text">Total Number <br> of Reviews</h3></div>
+          <div id="right-chart"></div>
+        </div>
+
+        <div class="row mt-5 pt-5 mb-5">
+          <div class="col">
+            <div class="admin-col-container" id="left-option">
+              <div id="img1-div">
+                <img class="mt-3 mb-3" src="../img/management.png" id="main-img-6" class="img-fluid" alt="Responsive image">
+              </div>
+              <a class="option-texts">Data Management</a>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="admin-col-container" id="right-option">
+              <div id="img2-div">
+                <img class="mt-3 mb-3" src="../img/settings.png" id="main-img-7" class="img-fluid" alt="Responsive image">
+              </div>
+              <a class="option-texts">Acount Settings</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    </div>
+    
+  </body>
+</html>

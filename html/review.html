@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Review Details</title>
+
+    <meta name="description" content="Our first page">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link  rel="stylesheet" href="../css/review.css"/>
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></link>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <script src="../js/review.js"></script>
+
+  </head>
+  
+  <body>
+    <div  class="container-fluid">
+
+      <nav class="navbar" id="nav-bar">
+        <div id="nav-text-container">
+          User Name
+        </div>
+      </nav>
+
+      <div id="main-content">
+        <h1 class="display-4" id="place-name-h1"></h1>
+
+        <div class="row mt-5">
+          <div class="col col-lg-2"><h3>Country:</h3></div>
+          <div class="col"><input class="form-control form-control-lg" id="place-input" type="text"></div>
+          <div class="w-100 mt-5"></div>
+          <div class="col col-lg-2"><h3>Rating:</h3></div>
+          <div class="col" id="rating-div"><input class="form-control form-control-lg" id="rating-input" type="number"> <h1 class="ml-3">/ 10</h1></div>
+          <div class="w-100 mt-5"></div>
+          <div class="col col-lg-2"><h3>Review:</h3></div>
+          <div class="col"><textarea class="form-control form-control-lg" id="review-textarea" rows="5"></textarea></div>
+      </div>
+
+      <button type="button" class="btn" id="edit-button">Edit</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Californian FB";
+    color: #707070;
+}
+
+
+/*USER MAIN PAGE*/
+
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+img#main-img-1, img#main-img-5 {
+    width: -webkit-fill-available;
+}
+
+#app-desc{
+    background-color: #EBBBA4;
+}
+
+div#text-contianer {
+    position: absolute;
+    background-color: white;
+    opacity: 0.6;
+    width: 500px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+h1#maintext1 {
+    font-size: 80px;
+}
+
+p#maintext2 {
+    font-size: 30px;
+}
+
+img#main-img-2, img#main-img-3, img#main-img-4 {
+    width: 400px;
+}
+
+div#images-gallerey {
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+}
+
+p#place-name1, p#place-name2, p#place-name3{
+    margin-left: 10px;
+}
+
+.col {
+    display: grid;
+    font-size: 30px;
+    padding: 0px;
+}
+
+.col-container {
+    border: solid 1px #888888;
+    cursor: pointer;
+    width: 400px;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+#app-desc{
+    padding: 20px;
+    text-align: center;
+}
+
+h1#aboutus1 {
+    font-size: 70px;
+}
+
+p#aboutus2 {
+    font-size: 30px;
+}
+
+
+/*ADMIN MAIN PAGE*/
+
+/* TABLE */
+#main-content{
+    margin:100px;
+}
+
+th {
+    background: #EBBBA4;
+}
+
+tr:nth-child(even) {
+    background: #BDD3E0;
+}
+
+tr:nth-child(odd) {
+    background: white !important;
+}
+
+table {
+    border-collapse: inherit !important;
+    text-align: center;
+    width: 84% !important;
+    margin: auto;
+}
+
+.table td, .table th {
+    border-top: none !important;
+}
+
+div#chart-row-top, div#chart-row-bottom {
+    display: flex;
+    margin-left: 8px;
+    width: 1320px;
+    background: #EBBBA4;
+    border: solid 1px #888888;
+}
+
+rect {
+    width: 1000px;
+}
+
+h1#user-number, h1#reviews-number {
+    font-size: 70px !important;
+    margin: 0px !important;
+}
+h3#user-number-text, h3#reviews-number-text{
+    font-size: 30px !important;
+}
+
+.admin-col-container {
+    border: solid 1px #888888;
+    cursor: pointer;
+    width: 600px;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+#left-option{
+    margin-left: 50px;;
+}
+
+#right-option{
+    margin-left: 0px;
+}
+
+#img1-div, #img2-div{
+ background-color: #d0d0d0;
+}
+
+#main-img-6{
+    width: 300px;
+    margin-left: 150px;
+}
+
+img#main-img-7 {
+    width: 260px;
+    margin-left: 170px;
+} 
+
+.option-texts{
+    margin-left: 200px;
+}
+
+table#dataTable {
+    margin-left: 20px;
+    width: 1330px !important;
+}
+
+@media only screen  and (min-width : 1824px) {
+
+    div#images-gallerey {
+        margin-left: 150px;
+    }
+
+    div#chart-row-top, div#chart-row-bottom {
+        margin-left: 130px;
+        width: 1460px;
+    }
+    .admin-col-container {
+        width: 700px;
+    }
+    #left-option{
+        margin-left: 145px;;
+    }
+    
+    #right-option{
+        margin-left: 40px;
+    }
+
+    #main-img-6{
+        margin-left: 200px;
+    }
+    
+    img#main-img-7 {
+        margin-left: 250px;
+    } 
+    .option-texts{
+        margin-left: 250px;
+    }
+
+    table#dataTable {
+        margin-left: 145px;
+        width: 1460px !important;
+
+    }
+}

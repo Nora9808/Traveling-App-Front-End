@@ -1,0 +1,39 @@
+<div id="main-content">
+  
+  <div class="row" id="new-events-div">
+    <form class="form-inline mb-5">
+      <input class="form-control mr-sm-2" id="search-event-input" type="text">
+      <button class="btn my-2 my-sm-0" id="find-event-button" type="submit">Find Event</button>
+      
+      <input class="form-check-input" type="checkbox" value="" id="all-events-checkbox">
+      <label class="form-check-label" for="all-events-checkbox">All Events</label>
+      
+      <input class="form-check-input" type="checkbox" value="" id="my-events-checkbox">
+      <label class="form-check-label" for="my-events-checkbox">My Events</label>
+    </form>
+  </div>
+
+  <div class="row" id="tableDiv">
+    <table class="table dataTable" id="eventsTable">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Events</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Attendances</th>
+                <th scope="col"></th>
+            <tr>
+        </thead>
+        <tbody id="events-tbody">
+        </tbody>
+    </table>
+    <div class="col-md-12 text-center">
+      <ul class="pagination pagination-lg pager" id="myPager">
+          <li><a href="#" id="prev-link" class="pr-3"> < </a></li>
+          <li class = "mt-2" id="page-num"></li>
+          <li><a href="#" id="next-link" class="pl-3"> > </a></li>
+      </ul>
+    </div>
+  </div>
+</div>

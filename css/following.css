@@ -1,0 +1,27 @@
+button.btn.user-profile-unfollow-button, button#following-profile-unfollow-button, button#following-profile-follow-button {
+    background-color: #EBBBA4;
+}
+
+a.following-username {
+    font-size: 20px !important;
+}
+
+button#following-profile-unfollow-button, button#following-profile-follow-button {
+    height: fit-content;
+   
+}
+
+.following-buttons{
+    margin-top: 200px;
+    margin-left: -170px;
+}
+
+ul#myPager {
+    margin-left: 1150px;
+}
+
+@media only screen  and (min-width : 1824px) {
+    ul#myPager {
+        margin-left: 1500px;
+    }
+}

@@ -1,0 +1,35 @@
+td#reviews-buttons {
+    display: flex;
+}
+
+td#reviews-buttons button {
+    margin: 5px;
+    background-color: #EBBBA4;
+}
+
+.reviews-content{
+    color: black;
+}
+
+#reviewTable{
+    text-align: center;
+}
+
+td.place-name-cell {
+    width: 7rem;
+}
+
+td.row-id {
+    width: 3rem;
+}
+
+
+ul#myPager {
+    margin-left: 1150px;
+}
+
+@media only screen  and (min-width : 1824px) {
+    ul#myPager {
+        margin-left: 1500px;
+    }
+}

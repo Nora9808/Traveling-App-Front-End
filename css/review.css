@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Californian FB";
+    color: #707070;
+}
+
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#main-content{
+    margin:50px;
+}
+
+div#nav-text-container {
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    margin-left: 1750px;
+}
+
+.navbar{
+    background-color: #EBBBA4;
+}
+
+input.form-control.form-control-lg, textarea#description-textarea {
+    width: 700px;
+}
+
+#edit-button{
+    background-color: #EBBBA4;
+    margin-top: 70px;
+    margin-left: 310px;
+}
+
+input#rating-input {
+    width: 100px;
+}
+
+div#rating-div {
+    display: flex;
+}

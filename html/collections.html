@@ -1,0 +1,32 @@
+<div id="main-content">
+  
+  <p class="ml-5" id="error-message"></p></form>
+  <div class="row" id="create-collection-div">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" id="create-collection-input" type="text">
+      <button class="btn my-2 my-sm-0" id="create-collection-button" type="submit">Create a Collection</button>
+    </form>
+  </div>
+
+  <div class="row" id="tableDiv">
+    <table class="table dataTable" id="collectionsTable">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Collections</th>
+                <th scope="col"># of Items</th>
+                <th scope="col"></th>
+            <tr>
+        </thead>
+        <tbody id="collections-tbody">
+        </tbody>
+    </table>
+    <div class="col-md-12 text-center">
+      <ul class="pagination pagination-lg pager" id="myPager">
+          <li><a href="#" id="prev-link" class="pr-3"> < </a></li>
+          <li class = "mt-2" id="page-num"></li>
+          <li><a href="#" id="next-link" class="pl-3"> > </a></li>
+      </ul>
+    </div>
+  </div>
+</div>

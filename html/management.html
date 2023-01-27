@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Data Management</title>
+
+    <meta name="description" content="Our first page">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+    <link  rel="stylesheet" href="../css/management.css"/>
+    <link  rel="stylesheet" href="../css/nav.css"/>
+
+    <link href='../packages/core/main.css' rel='stylesheet' />
+    <link href='../packages/daygrid/main.css' rel='stylesheet' />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src='../packages/core/main.js'></script>
+    <script src='../packages/interaction/main.js'></script>
+    <script src='../packages/daygrid/main.js'></script>
+
+
+    <script src="../js/management.js"></script>
+    <script src="../js/nav.js"></script>
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar justify-content-between" id="nav-bar">
+        <form class="form-inline" id="search-box">
+          <input class="form-control mr-sm-2" type="search" id="search-value" aria-label="Search">
+          <button class="btn my-2 my-sm-0" id="search-button" type="submit">Search</button>
+        </form>
+
+        <div id="nav-text-container">
+            <div class= 'dropdown .d-none'>
+              <a href='#' class='link-secondary nav-value' id='user-nav-button'></a>
+              <div class='dropdown-content'>
+                <a class='nav-dashboard' href='#'>Dashboard</a>
+                <a class='nav-account-settings' href='#'>Account Settings</a>
+                <a class='nav-logout' href='#'>Logout</a></div></div>
+              </div>
+            </div>
+        </div>
+      </nav>
+
+      <div id="main-content">
+        <div class="row" id="page-title">
+            <h1 class="mb-5 managementTitle"></h1>
+        </div>
+
+
+        <div class="row mt-5 mb-5" id="upload-data-div">
+         
+          <form class="form-inline" id="upload-data-form">
+            <select class="form-select" id="places-dropdown">
+              <option value="Continents">Continents</option>
+              <option value="Countries">Countries</option>
+              <option value="Cities">Cities</option>
+            </select>            
+          </form>
+
+          <button type="button" class="btn" id="upload-data">Upload Data</button>
+          <p class="text-danger ml-5" id="error_message"></p>
+          
+        </div>
+      
+        <div class="row" id="tableDiv">
+          <table class="table dataTable" id="managmentTable">
+              <thead>
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col" class="data-col">Data</th>
+                      <th scope="col"></th>
+                  <tr>
+              </thead>
+              <tbody id="data-management-tbody">
+              </tbody>
+          </table>
+          <div class="col-md-12 text-center">
+            <ul class="pagination pagination-lg pager" id="myPager">
+                <li><a href="#" id="prev-link" class="pr-3"> < </a></li>
+                <li class = "mt-2" id="page-num"></li>
+                <li><a href="#" id="next-link" class="pl-3"> > </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
